@@ -11,7 +11,11 @@ class Animal(AddAnimal):
         self.age = age
         self.sound = sound
         self.add_animal()
-        Animal.__count_animal += 1
+        self.count_animal()
+
+    @classmethod
+    def count_animal(cls):
+        cls.__count_animal += 1
 
     def make_sound(self):
         return self.sound
@@ -28,8 +32,12 @@ class Animal(AddAnimal):
     def get_animals(self):
         return Animal.animals
 
-    def get_count(self):
-        return self.__count_animal
+    @classmethod
+    def get_count(cls):
+        return cls.__count_animal
 
     def __str__(self):
         return "Zoo Animal Information Management System"
+
+
+lion = Animal("lion", "kaka", 32, "haaaa")
