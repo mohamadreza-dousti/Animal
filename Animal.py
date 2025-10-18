@@ -1,4 +1,5 @@
 from add_animal import AddAnimal
+import Bird
 
 class Animal(AddAnimal):
     zoo_name = "San Diego Zoo"
@@ -38,6 +39,3 @@ class Animal(AddAnimal):
 
     def __str__(self):
         return "Zoo Animal Information Management System"
-
-
-lion = Animal("lion", "kaka", 32, "haaaa")
