@@ -1,0 +1,12 @@
+from Animal import Animal
+
+class Bird(Animal):
+    def __init__(self, name, species, age, sound, wing_span):
+        self.wing_span = wing_span
+        super().__init__(name, species, age, sound)
+
+
+    def add_animal(self):
+        Animal.animals.append({"Zoo":Animal.zoo_name, "Name":self.name,
+                               "Species":self.species, "Age":self.age,
+                               "Sound":self.sound, "Wing span":self.wing_span})
