@@ -20,3 +20,7 @@ class Bird(Animal):
 
         while pygame.mixer.music.get_busy():
             continue
+
+    def info(self):
+        return (f"name:{self.name}\nspecies:{self.species}\n"
+                f"age:{self.age}\nsound:voice")
