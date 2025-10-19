@@ -1,3 +1,4 @@
+import pygame
 from Animal import Animal
 
 class Bird(Animal):
@@ -10,3 +11,12 @@ class Bird(Animal):
         Animal.animals.append({"Zoo":Animal.zoo_name, "Name":self.name,
                                "Species":self.species, "Age":self.age,
                                "Sound":self.sound, "Wing span":self.wing_span})
+
+    def make_sound(self):
+        pygame.init()
+        pygame.mixer.init()
+        pygame.mixer.music.load(self.sound)
+        pygame.mixer.music.play()
+
+        while pygame.mixer.music.get_busy():
+            continue
