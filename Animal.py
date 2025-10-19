@@ -1,5 +1,4 @@
 from add_animal import AddAnimal
-import Bird
 
 class Animal(AddAnimal):
     zoo_name = "San Diego Zoo"
@@ -12,7 +11,7 @@ class Animal(AddAnimal):
         self.age = age
         self.sound = sound
         self._AddAnimal__add_animal()
-        self.count_animal()
+        Animal.count_animal()
 
     @classmethod
     def count_animal(cls):
