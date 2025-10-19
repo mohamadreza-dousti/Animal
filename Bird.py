@@ -10,7 +10,7 @@ class Bird(Animal):
     def _AddAnimal__add_animal(self):
         Animal.animals.append({"Zoo":Animal.zoo_name, "Name":self.name,
                                "Species":self.species, "Age":self.age,
-                               "Sound":self.sound, "Wing span":self.wing_span})
+                               "Sound":"voice", "Wing span":self.wing_span})
 
     def make_sound(self):
         pygame.init()
