@@ -7,7 +7,7 @@ class Bird(Animal):
         super().__init__(name, species, age, sound)
 
 
-    def add_animal(self):
+    def _AddAnimal__add_animal(self):
         Animal.animals.append({"Zoo":Animal.zoo_name, "Name":self.name,
                                "Species":self.species, "Age":self.age,
                                "Sound":self.sound, "Wing span":self.wing_span})

@@ -11,7 +11,7 @@ class Animal(AddAnimal):
         self.species = species
         self.age = age
         self.sound = sound
-        self.add_animal()
+        self._AddAnimal__add_animal()
         self.count_animal()
 
     @classmethod
@@ -25,7 +25,7 @@ class Animal(AddAnimal):
         return (f"name:{self.name}\nspecies:{self.species}\n"
                 f"age:{self.age}\nsound:{self.sound}")
     
-    def add_animal(self):
+    def _AddAnimal__add_animal(self):
         Animal.animals.append({"Zoo":Animal.zoo_name, "Name":self.name,
                                "Species":self.species, "Age":self.age,
                                "Sound":self.sound})
