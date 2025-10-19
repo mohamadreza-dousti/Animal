@@ -1,5 +1,5 @@
 import pygame
-from Animal import Animal
+from src.Animal import Animal
 
 class Bird(Animal):
     def __init__(self, name, species, age, sound, wing_span):

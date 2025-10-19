@@ -1,4 +1,4 @@
-from add_animal import AddAnimal
+from src.add_animal import AddAnimal
 
 class Animal(AddAnimal):
     zoo_name = "San Diego Zoo"
