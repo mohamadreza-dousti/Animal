@@ -1,9 +1,8 @@
 from src import Animal, Bird
 
 if __name__ == "__main__":
-    parrot = Bird.Bird("kdjl", "kdjl", 2, "sound.mp3", 12)
-    lion = Animal.Animal("lion", "kaka", 2, "hahaha")
-    bird = Bird.Bird("kl", "kl", 2, "sound.mp3", 12)
+    parrot = Bird.Bird("parrot", "Rose-ringed", 2, "sound.mp3", 12)
+    lion = Animal.Animal("lion", "large cat", 23, "ROAR!")
     print(lion.get_count())
     print(parrot.get_count())
     print(parrot.info())
